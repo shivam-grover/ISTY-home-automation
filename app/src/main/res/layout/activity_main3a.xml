@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textViewSignup2"
+        android:layout_width="wrap_content"
+        android:layout_height="13dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/listitemAppliances"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/lemonmilk"
+        android:text="LOGOUT"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:text="name" />
+
+    <!--<Spinner-->
+        <!--android:id="@+id/spinner_items"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="15dp"-->
+        <!--android:entries="@array/Items" />-->
+
+
+    <Spinner
+        android:id="@+id/spinner_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:entries="@array/Items" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:paddingLeft="10sp">
+
+        <TextView
+            android:id="@+id/editSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Schedule" />
+
+        <TextView
+            android:id="@+id/Status"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Status" />
+
+        <CheckBox
+            android:id="@+id/checkbox_On"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editSchedule"
+            android:layout_marginRight="15dp"
+            android:text="on" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="134dp"
+        android:text="Add appliance" />
+
+    <ListView
+        android:id="@+id/listitemAppliances"
+        android:layout_width="match_parent"
+        android:layout_height="315dp"
+        android:layout_margin="18sp"
+        android:layout_below="@id/add_button" />
+</RelativeLayout>
